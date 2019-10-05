@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wangyanbao.user.mapper.AdminMapper">
+    <!-- 新增 -->
+    <insert id="insert" parameterType="com.wangyanbao.user.pojo.Admin">
+        INSERT INTO `tb_admin`(id ,loginname ,password ,state)
+        VALUES(#{id},#{loginname},#{password},#{state})
+    </insert>
+    <select id="findAll"  resultType="com.wangyanbao.user.pojo.Admin">
+        select * from tb_admin
+    </select>
+    <select id="findByPage" resultType="com.wangyanbao.user.pojo.Admin">
+        select * from tb_admin
+    </select>
+    <select id="findByLoginname" parameterType="java.lang.String" resultType="com.wangyanbao.user.pojo.Admin">
+        select * from tb_admin where loginname = #{loginname}
+    </select>
+    <delete id="deleteAById" parameterType="java.lang.String">
+        delete from tb_admin where id = #{Id}
+    </delete>
+</mapper>

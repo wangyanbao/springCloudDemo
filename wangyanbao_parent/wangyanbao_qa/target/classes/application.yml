@@ -1,0 +1,41 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: wangyanbao-qa
+#===================================
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.19.132:3306/tensquare_qa?characterEncoding=utf-8
+    username: root
+    password: root
+#================================
+  redis:
+    host: 192.168.19.132
+eureka:
+  client:
+    service-url:
+       defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true
+
+
+
+
+mybatis:
+  type-aliases-package: com.wangyanbao.qa.pojo
+  mapper-locations: classpath:mapper/*.xml
+#==============分页
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: countSql
+
+jwt:
+  config:
+    key: wangyanbao
+    ttl: 3600000
+
+
+

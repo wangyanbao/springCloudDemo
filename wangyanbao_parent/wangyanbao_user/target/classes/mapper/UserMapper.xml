@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wangyanbao.user.mapper.UserMapper">
+    <!-- 新增 -->
+    <insert id="insert" parameterType="com.wangyanbao.user.pojo.User">
+        INSERT INTO `tb_user`(id ,mobile ,password ,nickname ,sex ,birthday ,avatar ,email ,regdate ,updatedate ,lastdate ,online ,interest ,personality ,fanscount ,followcount)
+        VALUES(#{id},#{mobile},#{password},#{nickname},#{sex},#{birthday},#{avatar},#{email},#{regdate},#{updatedate},#{lastdate},#{online},#{interest},#{personality},#{fanscount},#{followcount})
+    </insert>
+    <select id="findAll"  resultType="com.wangyanbao.user.pojo.User">
+        select * from tb_user
+    </select>
+    <select id="findByPage" resultType="com.wangyanbao.user.pojo.User">
+        select * from tb_user
+    </select>
+    <select id="findBynickname" parameterType="java.lang.String" resultType="com.wangyanbao.user.pojo.User">
+        select * from tb_user where nickname = #{nickname}
+    </select>
+    <delete id="deleteAById" parameterType="java.lang.String">
+        delete from tb_user where id = #{Id}
+    </delete>
+</mapper>

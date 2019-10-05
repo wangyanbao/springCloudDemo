@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wangyanbao_article" />
+        <module name="wangyanbao_base" />
+        <module name="wangyanbao_common" />
+        <module name="wangyanbao_eureka" />
+        <module name="wangyanbao_qa" />
+        <module name="wangyanbao_recruit" />
+        <module name="wangyanbao_sms" />
+        <module name="wangyanbao_user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="wangyanbao_article" target="1.8" />
+      <module name="wangyanbao_base" target="1.8" />
+      <module name="wangyanbao_common" target="1.8" />
+      <module name="wangyanbao_eureka" target="1.8" />
+      <module name="wangyanbao_parent" target="1.8" />
+      <module name="wangyanbao_qa" target="1.8" />
+      <module name="wangyanbao_recruit" target="1.8" />
+      <module name="wangyanbao_sms" target="1.8" />
+      <module name="wangyanbao_user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

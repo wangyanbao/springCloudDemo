@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wangyanbao.base.mapper.LabelsMapper">
+    <!-- 新增 -->
+    <insert id="insert" parameterType="com.wangyanbao.base.pojo.Label">
+        INSERT INTO `tb_label`(id,labelname,state,count,recommend,fans)
+        VALUES(#{id},#{labelname},#{state},#{count},#{recommend},#{fans})
+    </insert>
+    <select id="findAll"  resultType="com.wangyanbao.base.pojo.Label">
+        select * from tb_label
+    </select>
+    <select id="findByPage" resultType="com.wangyanbao.base.pojo.Label">
+        select * from tb_label
+    </select>
+    <select id="findById" parameterType="java.lang.String" resultType="com.wangyanbao.base.pojo.Label">
+        select * from tb_label where id = #{Id}
+    </select>
+    <delete id="deleteAById" parameterType="java.lang.String">
+        delete from tb_label where id = #{Id}
+    </delete>
+</mapper>
