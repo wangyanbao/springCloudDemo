@@ -1,0 +1,26 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: wangyanbao-manager
+
+eureka:
+  client:
+    service-url:
+       defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true
+zuul:
+  routes:
+    wangyanbao-base:
+      path: /base/**
+      serviceId: wangyanbao-base
+    wangyanbao-article:
+      path: /article/**
+      serviceId: wangyanbao-article
+    wangyanbao-user:
+      path: /user/**
+      serviceId: wangyanbao-user
+    wangyanbao-qa:
+      path: /qa/**
+      serviceId: wangyanbao-qa

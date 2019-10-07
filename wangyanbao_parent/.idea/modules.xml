@@ -5,12 +5,15 @@
       <module fileurl="file://$PROJECT_DIR$/wangyanbao_article/wangyanbao_article.iml" filepath="$PROJECT_DIR$/wangyanbao_article/wangyanbao_article.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangyanbao_base/wangyanbao_base.iml" filepath="$PROJECT_DIR$/wangyanbao_base/wangyanbao_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangyanbao_common/wangyanbao_common.iml" filepath="$PROJECT_DIR$/wangyanbao_common/wangyanbao_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wangyanbao_config/wangyanbao_config.iml" filepath="$PROJECT_DIR$/wangyanbao_config/wangyanbao_config.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangyanbao_eureka/wangyanbao_eureka.iml" filepath="$PROJECT_DIR$/wangyanbao_eureka/wangyanbao_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wangyanbao_manager/wangyanbao_manager.iml" filepath="$PROJECT_DIR$/wangyanbao_manager/wangyanbao_manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangyanbao_parent.iml" filepath="$PROJECT_DIR$/wangyanbao_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangyanbao_qa/wangyanbao_qa.iml" filepath="$PROJECT_DIR$/wangyanbao_qa/wangyanbao_qa.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangyanbao_recruit/wangyanbao_recruit.iml" filepath="$PROJECT_DIR$/wangyanbao_recruit/wangyanbao_recruit.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangyanbao_sms/wangyanbao_sms.iml" filepath="$PROJECT_DIR$/wangyanbao_sms/wangyanbao_sms.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangyanbao_user/wangyanbao_user.iml" filepath="$PROJECT_DIR$/wangyanbao_user/wangyanbao_user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wangyanbao_web/wangyanbao_web.iml" filepath="$PROJECT_DIR$/wangyanbao_web/wangyanbao_web.iml" />
     </modules>
   </component>
 </project>

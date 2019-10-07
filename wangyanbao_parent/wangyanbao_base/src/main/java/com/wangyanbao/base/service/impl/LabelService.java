@@ -51,12 +51,7 @@ public class LabelService implements ILabelService{
 
     @Override
     public Label findAById(String Id) {
-        Label label= (Label)redisTemplate.opsForValue().get("Label_"+Id);
-        if(null ==label){
-            label=labelMapper.findById(Id);
-            redisTemplate.opsForValue().set("Label_"+Id,label);
-        }
-        return label;
+        return labelMapper.findById(Id);
     }
 
     @Override

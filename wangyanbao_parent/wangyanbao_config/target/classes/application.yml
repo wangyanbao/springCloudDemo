@@ -1,0 +1,17 @@
+server:
+  port: 12000
+spring:
+  application:
+    name: wangyanbao-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/wangyanbao1/springCloudDemo.git
+  rabbitmq:
+    host: 192.168.19.132
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

@@ -16,6 +16,9 @@
         <module>wangyanbao_user</module>
         <module>wangyanbao_sms</module>
         <module>wangyanbao_eureka</module>
+        <module>wangyanbao_manager</module>
+        <module>wangyanbao_web</module>
+        <module>wangyanbao_config</module>
     </modules>
     <packaging>pom</packaging>
 
